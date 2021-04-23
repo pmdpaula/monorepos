@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import moduleName from '@pmdpaula/modulo-comum/components/Button/Button';
+import { Button } from '@pmdpaula/ui/src/components/Button';
 
 const Title = styled.h1`
   color: blueviolet;
@@ -8,5 +8,12 @@ const Title = styled.h1`
 `
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <div>
+      <Title>Nosso site que usa lib de componentes locais</Title>
+      <Button />
+        {/* Este é o children do botão
+      </Button> */}
+    </div>
+  )
 }
