@@ -1,0 +1,17 @@
+yarn workspace @pmdpaula/site dev
+
+
+
+
+# Uso com Storybook
+
+# Criar um projeto React (pode ser com Next.js)
+$projetos> yarn create react-app ui --template typescript
+
+#### remover o yarn.lock do diretório ui. Os pacotes devem ser gerenciados pelo package.json raiz (no caso: modulo06)
+
+## Instalar o Storybook no projeto
+$ui> npx sb init
+
+# Starts Storybook in development mode
+$ui> yarn storybook
