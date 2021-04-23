@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { UIProvider } from '@pmdpaula/ui/src/theme/UIProvider';
 
-import { Button } from '@pmdpaula/ui/src/components/Button';
+import Button from '@pmdpaula/ui/src/components/Button';
 
 const Title = styled.h1`
   color: blueviolet;
@@ -9,11 +10,13 @@ const Title = styled.h1`
 
 export default function Home() {
   return (
-    <div>
-      <Title>Nosso site que usa lib de componentes locais</Title>
-      <Button />
-        {/* Este é o children do botão
-      </Button> */}
-    </div>
+    <UIProvider>
+      <div>
+        <Title>Nosso site que usa lib de componentes locais</Title>
+        <Button>
+          Botão do site
+        </Button>
+      </div>
+    </UIProvider>
   )
 }
